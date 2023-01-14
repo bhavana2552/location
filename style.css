@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.125rem;
+}
+
+button {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    font-size: 2.125rem;
+}
+
+.userDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.userDetails p {
+    font-weight: bold;
+}
+
+.map {
+    width: 100%;
+    height: 649px;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+}
+.mapDetails p{
+    font-weight: bold;
+}
+.search i {
+    
+    position: relative;
+    top: 4rem;
+    left: 1rem;
+
+}
+  
+.search {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+  
+input {
+    width: -webkit-fill-available;
+    padding: 1rem;
+    padding-left: 3rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+input::placeholder{
+    padding-top: 1rem;
+    text-align: start;
+    padding-left:20px ;
+    font-size: 1.5rem;
+}
+.displayPostalCodes{
+    width: 100%;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.postalCode{
+    border: 2px solid black;
+    padding: 5px 10px;
+
+}
+#ipAddressData{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+    }
+    button{
+        border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .map {
+     
+        height: 200px;
+    }
+    input{
+        width: -webkit-fill-available;
+        padding: 5px;
+        height: 28px;
+        padding-left: 35px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    input::placeholder{
+        /* padding-top: 10px; */
+        text-align: start;
+        padding-left:5px ;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .search i{
+        top: 2rem;
+        font-size: 16px !important;
+        margin-bottom: 9px;
+    }
+    
+  }
